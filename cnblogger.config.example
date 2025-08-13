@@ -1,0 +1,25 @@
+{
+	"mode": "cli",
+	"delimiter": "|",
+	"file_dir": "./.logs",
+	"file_same_day_mode": "append",
+	"api_url": null,
+	"api_verify": true,
+	"api_timeout_seconds": 3.0,
+	"api_headers": {},
+	"db_sqlite_path": null,
+	"db_sqlite_table": "logs",
+	"db_mysql": {},
+	"db_postgres": {},
+	"db_mongo_uri": null,
+	"db_mongo_database": null,
+	"db_mongo_collection": null,
+	"colors": {
+		"INFO": "cyan",
+		"CRITICAL": "red",
+		"ERROR": "bright_yellow",
+		"WARN": "yellow",
+		"DEBUG": "blue"
+	},
+	"timestamp_utc": false
+}
