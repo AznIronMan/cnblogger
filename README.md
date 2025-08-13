@@ -30,6 +30,18 @@ logger.error("Something went wrong")
 ### Configuration
 If `cnblogger.config` does not exist, it will be created automatically with defaults on first use. You can also copy from `cnblogger.config.example`.
 
+Config location:
+- By default: put `cnblogger.config` in the app's current working directory (CWD).
+- Env override:
+```bash
+export CNBLOGGER_CONFIG=/path/to/cnblogger.config
+```
+- Code override:
+```python
+from cnblogger import CNBLogger
+logger = CNBLogger(config_path="/path/to/cnblogger.config")
+```
+
 Create or edit a `cnblogger.config` JSON file in your project root (or set `CNBLOGGER_CONFIG` env var to a path). Example with databases:
 
 ```json
